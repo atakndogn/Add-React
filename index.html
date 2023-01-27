@@ -25,7 +25,20 @@
       </li>
     </ul>
     <div class="root" id="root3"></div>
-    <!-- end of the page -->
+
+    <!-- JSX and production version with Babel -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="like-button.js" type="text/babel"></script>
+
+    <!-- Vanilla JS and Development Version
     <script
       src="https://unpkg.com/react@18/umd/react.development.js"
       crossorigin
@@ -35,5 +48,6 @@
       crossorigin
     ></script>
     <script src="like-button.js"></script>
+    -->
   </body>
 </html>

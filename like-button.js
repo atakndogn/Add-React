@@ -7,6 +7,10 @@ function LikeButton() {
     return "You liked this!";
   }
 
+  /****** JSX with Babel Version *******/
+  return <button onClick={() => setLiked(true)}>Like</button>;
+
+  /*****  Vanilla JS function version  *****
   return React.createElement(
     "button",
     {
@@ -14,15 +18,12 @@ function LikeButton() {
     },
     "Like"
   );
+  */
 }
 
 const roots = document.getElementsByClassName("root");
-//console.log(roots);
 
 for (let i = 0; i < roots.length; i++) {
   let root = ReactDOM.createRoot(roots[i]);
   root.render(React.createElement(LikeButton));
 }
-
-//const root1 = ReactDOM.createRoot(document.getElementById("root1"));
-//root1.render(React.createElement(LikeButton));
